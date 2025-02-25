@@ -16,7 +16,7 @@ function agregarAmigo() {
 
     inputAmigo.value = "";
     actualizarLista();
-  }
+  };
 
 };
 
@@ -30,6 +30,20 @@ function actualizarLista() {
   var li = document.createElement("li");
   li.innerText=amigo;
   lista.appendChild(li);
-  }
+  };
 
 };
+
+function sortearAmigo() {
+  
+  if (amigos.length != 0 ) {
+  let indice = Math.floor(Math.random() * amigos.length);
+  console.log(indice);
+  let amigoSecreto = amigos[indice];
+  let resultado = document.getElementById('resultado');
+  resultado.innerHTML = amigoSecreto
+
+  };
+
+};
+
